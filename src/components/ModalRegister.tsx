@@ -43,7 +43,6 @@ export default function ModalRegister({ onClose }: { onClose: () => void }) {
 
   const updateForm = (key: keyof RegisterForm, value: string | string[]) => {
     setForm((prev) => ({ ...prev, [key]: value }));
-    //5.2. การอัปเดตฟอร์มพร้อมล้างสถานะ Error
     setErrors((prev) => ({ ...prev, [key]: false }));
   };
 
