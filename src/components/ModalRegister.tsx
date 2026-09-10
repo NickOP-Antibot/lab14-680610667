@@ -93,7 +93,7 @@ export default function ModalRegister({ onClose }: { onClose: () => void }) {
       plan: form.plan,
       extraItems: form.extraItems,
       total: total,
-    };  
+    };
 
     const existingData = localStorage.getItem("marathon-users");
     const usersArray = existingData ? JSON.parse(existingData) : [];
@@ -180,7 +180,7 @@ export default function ModalRegister({ onClose }: { onClose: () => void }) {
                   Female 👩
                 </div>
                 {errors.gender && (
-                  <div className="text-danger" style={{ fontSize: "0.875em" }}>
+                  <div className="invalid-feedback d-block">
                     Please select gender
                   </div>
                 )}
